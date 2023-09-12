@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParametriConfigurazioneXML ipClient = "127.0.0.1"
+							ipServerLog = "127.0.0.1"
+							portaServerLog = "6789"
+							ipDB = "127.0.0.1"
+							usernameDB = "root"
+							passwordDB = ""
+							portaDB = "3306"
+							>
+<fontTitolo>Arial</fontTitolo>
+<fontTabella>Verdana</fontTabella>
+<dimensioneFontTitolo>30</dimensioneFontTitolo>
+<dimensioneFontTabella>12</dimensioneFontTabella>
+<numCategorieTreno>4</numCategorieTreno>
+<categorieTreno>
+	<string>REG</string>
+	<string>RV</string>
+	<string>IC</string>
+	<string>AV</string>
+</categorieTreno>
+</ParametriConfigurazioneXML>

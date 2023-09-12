@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ParametriConfigurazioneXML">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fontTitolo" type="xs:string"/>
+				<xs:element name="fontTabella" type="xs:string"/>
+				<xs:element name="dimensioneFontTitolo" type="xs:integer"/>
+				<xs:element name="dimensioneFontTabella" type="xs:integer"/>
+				<xs:element name="numCategorieTreno" type="xs:integer"/>
+				<xs:element name="categorieTreno">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="string" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ipClient" type="xs:string"/>
+			<xs:attribute name="ipServerLog" type="xs:string"/>
+			<xs:attribute name="portaServerLog" type="xs:short"/>
+			<xs:attribute name="ipDB" type="xs:string"/>
+			<xs:attribute name="usernameDB" type="xs:string"/>
+			<xs:attribute name="passwordDB" type="xs:string"/>
+			<xs:attribute name="portaDB" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
